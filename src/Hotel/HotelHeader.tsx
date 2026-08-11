@@ -56,7 +56,7 @@ function Navigation({showNav,setShowNav}:NavigationProp){
     return(
         <div className="relative gap-6 z-50 flex justify-between items-center lg:items-center lg:gap-0 lg:order-1" onClick={(e)=>{e.stopPropagation();setShowNav(false)}}>
             {/* <p className={"font-cinzel order-2 font-bold text-gold lg:text-3xl md:text-3xl -z-1 text-[24px] " + `${showNav ? 'translate-x-24':''}`}>{hotel.name}</p> */}
-            <img src={hotel.logo} alt="Logo" className={"order-2 w-36 " + `${showNav ? 'translate-x-48':''}`}/>
+            <img src={hotel.logo} alt="Logo" className={"order-2 w-25 " + `${showNav ? 'translate-x-48':''}`}/>
             <GiHamburgerMenu className={"size-8 lg:hidden md:hidden text-gold hover:cursor-pointer hover:text-gold-hover " + `${showNav ? 'hidden':'block'}`} onClick={(e)=>{e.stopPropagation();setShowNav(true)}}/>
             <MobileNavBar showNav={showNav}/>
             <NavBar />
