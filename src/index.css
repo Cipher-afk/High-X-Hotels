@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Comic+Relief:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Comic+Relief:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Comic+Relief:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import 'tailwindcss';
+
+:root{
+  --color-bg: #0D0D0D;
+  --color-surface: #171717;
+  --color-gold: #C9A75D;
+  --color-gold-hover: #E0C27A;
+  --color-text: #F5F5F5;
+  --color-text-muted: #B8B8B8;
+}
+
+@theme {
+  --font-inter: 'Inter', sans-serif;
+  --font-cinzel: 'Cinzel', sehrif;
+  --font-playfair: 'Playfair Display', serif;
+  --color-background: var(--color-bg);
+  --color-surface: var(--color-surface);
+  --color-gold: var(--color-gold);
+  --color-gold-hover: var(--color-gold-hover);
+  --color-mainText: var(--color-text);
+  --color-subText: var(--color-text-muted);
+
+}
+
+html{
+  scroll-behaviour: smooth;
+}
+
+body{
+  background-color:var(--color-background);
+}
+
+@keyframes scroll{
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%)
+  }
+}
+
+@utility animate-scroll{
+  animation: scroll 30s linear infinite;
+}
+
+@utility animation-paused{
+  animation-play-state: paused;
+}
+
