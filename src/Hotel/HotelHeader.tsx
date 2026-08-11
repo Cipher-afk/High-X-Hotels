@@ -69,7 +69,7 @@ function HeroText(){
     const message = encodeURIComponent('Hello i would like to book a room please')
     const editedWhatsappLink = hotel.whatsapp_link+`?text=${message}`
     return(
-        <div className="lg:mt-12 mt-3.5 gap-6 relative lg:z-50 z-1 w-full lg:w-[50%] flex flex-col lg:gap-6 items-start">
+        <div className="lg:mt-12 mt-3.5 gap-5 relative lg:z-50 z-1 w-full lg:w-[50%] flex flex-col lg:gap-6 items-start">
             <p className="text-gold uppercase font-medium text-[16px] lg:text-[17px] md:text-[17px] font-inter">A sanctuary of luxury and comfort</p>
             <p className="font-cinzel text-[3rem] lg:text-[4rem] md:text-[4rem] font-medium leading-13.25 lg:leading-17 md:leading-17 text-mainText">Experience <br /> Timeless elegance</p>
             <p className="font-inter text-[15px] lg:text-[16px] md:text-[16px] text-subText font-bold">Discover a refined escape where exceptional service. <br /> breathtaking views, and unmatched comfort come together <br /> for an unforgettable stay</p>
